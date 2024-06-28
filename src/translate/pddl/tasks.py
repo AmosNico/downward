@@ -74,7 +74,7 @@ REQUIREMENT_LABELS = [
     ":negative-preconditions", ":disjunctive-preconditions",
     ":existential-preconditions", ":universal-preconditions",
     ":quantified-preconditions", ":conditional-effects",
-    ":derived-predicates", ":action-costs"
+    ":derived-predicates", ":action-costs", ":constraints", ":preferences"
 ]
 
 

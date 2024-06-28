@@ -793,8 +793,8 @@ def parse_task_pddl(context, task_pddl, type_dict, predicate_dict):
         for entry in iterator:
             if isinstance(entry, list) and entry[0] == ":metric":
                 with context.layer("Parsing metric"):
-                    if len(entry) != 3 or not isinstance(entry[2], list) or len(entry[2]) != 1 or entry[1] != "minimize" or entry[2][0] != "total-cost":
-                        context.error("Invalid metric definition.", entry, syntax=SYNTAX_METRIC)
+                    # if len(entry) != 3 or not isinstance(entry[2], list) or len(entry[2]) != 1 or entry[1] != "minimize" or entry[2][0] != "total-cost":
+                    #    context.error("Invalid metric definition.", entry, syntax=SYNTAX_METRIC)
                     use_metric = True
         yield use_metric
 
